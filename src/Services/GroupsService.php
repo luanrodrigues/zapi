@@ -54,7 +54,7 @@ class GroupsService extends BaseService
         ]);
     }
 
-    public function getGroupMetadata($groupId)
+    public function getGroup($groupId)
     {
         return $this->request('GET', 'group-metadata/'.$groupId);
     }
