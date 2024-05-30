@@ -2,6 +2,8 @@
     "name": "luanrodrigues/zapi",
     "description": "A wrapper for Zapi with Laravel facades",
     "type": "library",
+    "keywords": ["sdk", "laravel", "php", "z-api"],
+    "license": "MIT",
     "require": {
         "php": ">=8.2"
     },
