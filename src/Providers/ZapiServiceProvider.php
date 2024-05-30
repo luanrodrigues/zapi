@@ -20,7 +20,7 @@ class ZapiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/zapi.php' => config_path('zapi.php'),
+            __DIR__ . '/../config/zapi.php' => config_path('zapi.php'),
         ]);
     }
 }
