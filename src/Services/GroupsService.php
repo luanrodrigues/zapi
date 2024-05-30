@@ -39,6 +39,15 @@ class GroupsService extends BaseService
         ]);
     }
 
+    public function mentionParticipants($groupId, $message, array $phones)
+    {
+        return $this->request('POST', 'send-text',[
+            'phone' => $groupId,
+            'message' => $message,
+            'mentioned' => $phones
+        ]);
+    }
+
     public function updateGroupPhoto($groupId, $image)
     {
         return $this->request('POST', 'update-group-photo', [
