@@ -1,0 +1,23 @@
+{
+    "name": "luanrodrigues/zapi",
+    "description": "A wrapper for Zapi with Laravel facades",
+    "type": "library",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LuanRodrigues\\Zapi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LuanRodrigues\\Zapi\\Providers\\ZapiServiceProvider"
+            ],
+            "aliases": {
+                "Zapi": "LuanRodrigues\\Zapi\\Facades\\Zapi"
+            }
+        }
+    }
+}
